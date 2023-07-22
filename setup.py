@@ -19,7 +19,7 @@ setup(
         for r in pkg_resources.parse_requirements(
             open(os.path.join(os.path.dirname(__file__), "requirements.txt"))
         )
-    ] + ["pyannote.audio @ git+https://github.com/mllife/pyannote-audio-118.git@822db88f573d7923d921dac11486f713c1729a09"], # fork fixing excessive disk use
+    ] + ["pyannote.audio @ git+https://github.com/LeeReid1/pyannote-audio-118"], # fork fixing excessive disk use
     entry_points = {
         'console_scripts': ['whisperx=whisperx.transcribe:cli'],
     },
